@@ -46,15 +46,3 @@ int highest_match(term *terms, int nterms, char *substr);
 void autocomplete(term **answer, int *n_answer, term *terms, int nterms, char *substr);
 ```
 - Generates a ranked list of matching terms sorted by weight.
-
-## Implementation Details
-
-### Struct Definition
-```c
-typedef struct term {
-    char term[200];
-    double weight;
-} term;
-```
-- Represents a term with a string (max length 200) and a weight.
-
